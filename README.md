@@ -2,7 +2,7 @@
 the to lib to record compatible ways
 
 ##1.事件监听
-'''javascript
+```javascript
 obj.addEventListner("click",callBack,true);//(兼容IE11,及其它现代浏览器)
 //区分 click 与 onclick
 obj.attachEventListener("onclick",callBack);//(兼容IE5~IE10)
@@ -14,7 +14,7 @@ function addEventHandler(obj,eventName,handler){
       obj.addEventListener(eventName,handler,false);
   }
 }
-'''
+```
 
 ##2.事件移除
 '''javascript
