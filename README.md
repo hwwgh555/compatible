@@ -14,10 +14,10 @@ function addEventHandler(obj,eventName,handler){
       obj.addEventListener(eventName,handler,false);
   }
 }
-```
+``` 
 
 ##2.事件移除
-'''javascript
+```javascript
 obj.removeEventListener('click',callBack,true);//移除addEventListener
 obj.detachEventListener('onclick',callBack,true);
 //compatible way
@@ -28,20 +28,20 @@ function removeEventHandler(obj,eventName,handler){
       obj.removeEventListener(eventName,handler,false);
   }
 }
-'''
+```
 
 ##3.事件对象
-'''javascript
+```javascript
 //compatible way
 document.onclick = function(e){//不太理解
-  var event = e||event;
+  var event = e||event;//e event
 }
-'''
+```
 
 ##4.阻止事件冒泡
-'''javascript
+```javascript
 e.stopPropagation();//(IE9-11及其它现代浏览器)
-window.event.cacelBubble = true;//(IE5 - IE8)
+window.event.cacelBubble = true;//(IE5 - IE8)  cancelBubble
 //compatible way
 function stopBubble(e){
   var e = e||window.event; 
@@ -51,12 +51,12 @@ function stopBubble(e){
       window.event.cacelBubble = true;
   }
 }
-'''
+```
 
 ##5.阻止默认事件
-'''javascript
+```
 e.preventDefault();//(IE11,Chrome,Safari)
-window.event.returnValue = false;//(兼容IE5 - IE10)
+window.event.returnValue = false;//(兼容IE5 - IE10) window.event.returnValue
 return false;//(兼容IE5 - IE10)
 //火狐浏览器无法阻止默认事件？
 //compatible way
@@ -68,14 +68,15 @@ function preDefault(e){
     window.event.returnValue = false;
   }
 }
-'''
+```
+
 ##6.事件委托
-'''javascript
+```javascript
 function eventTarget(e){
   var e = e||window.event;
-  var targetEle = e.target||e.srcElement;
+  var targetEle = e.target||e.srcElement;//srcElement
   return targetEle;
 }
-'''
+```
 ##以上关于 js事件方面的兼容性处理
 ##以上来自http://bianhua1314.blog.163.com/blog/static/2389430302014102095531384/
