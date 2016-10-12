@@ -1,5 +1,5 @@
 # compatible
-the to lib to record compatible ways
+lib to record compatible ways
 
 ##1.事件监听
 ```javascript
