@@ -78,5 +78,5 @@ function eventTarget(e){
   return targetEle;
 }
 ```
-##以上关于 js事件方面的兼容性处理
-##以上来自http://bianhua1314.blog.163.com/blog/static/2389430302014102095531384/
+###以上关于 js事件方面的兼容性处理
+###以上来自http://bianhua1314.blog.163.com/blog/static/2389430302014102095531384/
