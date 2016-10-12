@@ -54,7 +54,7 @@ function stopBubble(e){
 ```
 
 ##5.阻止默认事件
-```
+```javascript
 e.preventDefault();//(IE11,Chrome,Safari)
 window.event.returnValue = false;//(兼容IE5 - IE10) window.event.returnValue
 return false;//(兼容IE5 - IE10)
